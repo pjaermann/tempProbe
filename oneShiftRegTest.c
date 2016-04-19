@@ -35,7 +35,7 @@ int main (void){
 	PORTC= 0b00000000;
 	while(1){
 		
-		for(uint8_t i=0;i<9;i++){
+		for(uint8_t i=0;i<10;i++){
 			write_digit(digits[i]);
 			_delay_ms(100);
 		}
