@@ -8,10 +8,10 @@ TARGET = output
 # Target type
 MCU=atmega328
 PROGRAMMER=arduino
-F_CPU=4915200UL
+F_CPU=4000000UL
  
  
-SRC = oneShiftRegTest.c
+SRC = main.c HC595.c
 OBJ = $(SRC:.c=.o)
  
  
