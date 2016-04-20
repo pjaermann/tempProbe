@@ -3,12 +3,14 @@
 
 #define SEG_1		1
 #define SEG_2		2
+
 #define DS1_PORT        PORTC
 #define DS1_PIN         0
 #define ST1_CP_PORT     PORTC
 #define ST1_CP_PIN      1
 #define SH1_CP_PORT     PORTC
 #define SH1_CP_PIN      2
+
 #define DS2_PORT	PORTC
 #define DS2_PIN		3
 #define ST2_CP_PORT	PORTC
@@ -31,17 +33,5 @@
 #define SH2_CP_high()   SH2_CP_PORT|=_BV(SH2_CP_PIN)
 
 extern uint8_t digits[10];
-/*	0b01111110,
-	0b00010010,
-	0b10111100,
-	0b10110110,
-	0b11010010,
-	0b11100110,
-	0b11001110,
-	0b00110010,
-	0b11111110,
-	0b11110110
-};
-*/
 void HC595_writeDigit(uint8_t digit,uint8_t sevenSegTarg);
 #endif
