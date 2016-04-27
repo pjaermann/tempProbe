@@ -1,7 +1,8 @@
 #include <avr/io.h>
 #include "HC595.h"
-
-uint8_t digits[10]={
+//digits 0->9 based on the connection between the shift register and the
+//7seg display
+uint8_t digits[11]={
 	0b01111110,
 	0b00010010,
 	0b10111100,
@@ -11,7 +12,8 @@ uint8_t digits[10]={
 	0b11001110,
 	0b00110010,
 	0b11111110,
-	0b11110110
+	0b11110110,
+	0b00000000//display dot
 };
 
 void HC595_writeDigit(uint8_t digit,uint8_t sevenSegTarg){

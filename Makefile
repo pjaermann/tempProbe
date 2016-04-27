@@ -8,7 +8,7 @@ TARGET = output
 # Target type
 MCU=atmega328
 PROGRAMMER=arduino
-F_CPU=4000000UL
+F_CPU=8000000UL
  
  
 SRC = main.c HC595.c

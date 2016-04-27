@@ -32,6 +32,6 @@
 #define SH2_CP_low()    SH1_CP_PORT&=~_BV(SH2_CP_PIN)
 #define SH2_CP_high()   SH2_CP_PORT|=_BV(SH2_CP_PIN)
 
-extern uint8_t digits[10];
+extern uint8_t digits[11];
 void HC595_writeDigit(uint8_t digit,uint8_t sevenSegTarg);
 #endif
